@@ -1,0 +1,157 @@
+/* Columns
+------------------------------------------------------- */
+.col0    { float:left; width:04.1666%; }
+.col1    { float:left; width:08.3333%; }
+.col2    { float:left; width:16.6666%; }
+.col3    { float:left; width:25.0000%; }
+.col4    { float:left; width:33.3333%; }
+.col5    { float:left; width:41.6666%; }
+.col6    { float:left; width:50.0000%; }
+.col7    { float:left; width:58.3333%; }
+.col8    { float:left; width:66.6666%; }
+.col9    { float:left; width:75.0000%; }
+.col10   { float:left; width:83.3333%; }
+.col11   { float:left; width:91.6666%; }
+.col12   { width:100%; }
+.margin0  { margin-left:04.1666%; }
+.margin1  { margin-left:08.3333%; }
+.margin2  { margin-left:16.6666%; }
+.margin3  { margin-left:25.0000%; }
+.margin4  { margin-left:33.3333%; }
+.margin5  { margin-left:41.6666%; }
+.margin6  { margin-left:50.0000%; }
+.margin7  { margin-left:58.3333%; }
+.margin8  { margin-left:66.6666%; }
+.margin9  { margin-left:75.0000%; }
+.margin10 { margin-left:83.3333%; }
+.margin11 { margin-left:91.6666%; }
+.margin12 { margin-left:100.0000%; }
+
+/* reverse margins on right-floated elements */
+.fr.margin0  { margin-right:04.1666%; }
+.fr.margin1  { margin-right:08.3333%; }
+.fr.margin2  { margin-right:16.6666%; }
+.fr.margin3  { margin-right:25.0000%; }
+.fr.margin4  { margin-right:33.3333%; }
+.fr.margin5  { margin-right:41.6666%; }
+.fr.margin6  { margin-right:50.0000%; }
+.fr.margin7  { margin-right:58.3333%; }
+.fr.margin8  { margin-right:66.6666%; }
+.fr.margin9  { margin-right:75.0000%; }
+.fr.margin10 { margin-right:83.3333%; }
+.fr.margin11 { margin-right:91.6666%; }
+.fr.margin12 { margin-right:100.0000%; }
+
+/* Padding
+------------------------------------------------------- */
+.pad1    { padding:10px; }
+.pad2    { padding:20px; }
+.pad21h  { padding:10px 20px; }
+.pad2h   { padding:0 20px; }
+.pad4    { padding:40px; }
+.pad4h   { padding-left:40px; padding-right:40px; }
+.pad8    { padding:80px 40px; }
+.pad4c   { padding:40px; }
+
+/* Transition
+------------------------------------------------------- */
+.transition {
+  -webkit-transition: all 200ms linear;
+  -moz-transition:    all 200ms linear;
+  -o-transition:      all 200ms linear;
+  transition:         all 200ms linear;
+}
+
+/* Additional Utility Classes
+------------------------------------------------------- */
+.fr           { float:right; }
+.fl           { float:left; }
+.show         { display:block; }
+.hide         { display:none; }
+.deemphasize  { color:#888; }
+.center       { text-align:center; }
+
+.tip-top:after,
+.tip-right:after,
+.tip-bottom:after,
+.tip-left:after {
+  content:'';
+  border-width:0 5px 5px;
+  border-style:solid;
+  position:absolute;
+  border-color:#333 transparent;
+  }
+  .tip-bottom:after {
+    border-width:5px 5px 0;
+    }
+  .tip-left:after {
+    border-width:5px 5px 5px 0;
+    border-color:transparent #333;
+    }
+  .tip-right:after {
+    border-width:5px 0 5px 5px;
+    }
+
+/* Clearfix
+http://nicolasgallagher.com/micro-clearfix-hack/
+------------------------------------------------------- */
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+/* Tablet Layout
+------------------------------------------------------- */
+@media only screen and (max-width:770px) {
+  .hide-tablet { display:none; }
+  .show-tablet { display:block; }
+  }
+
+/* Mobile Layout
+------------------------------------------------------- */
+@media only screen and (max-width:640px) {
+  .col1,
+  .col2,
+  .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10,
+  .col11,
+  .col12 { width:100%; max-width:100%; }
+  .margin0,
+  .margin1,
+  .margin2,
+  .margin3,
+  .margin4,
+  .margin5,
+  .margin6,
+  .margin7,
+  .margin8,
+  .margin9,
+  .margin10,
+  .margin11,
+  .margin12 { margin-left:0; }
+  .pad4c { padding:0; }
+  .pad4,
+  .pad4h { padding-left:20px; padding-right:20px; }
+  .pad8 { padding:40px 20px; }
+  .hide-mobile { display:none; }
+  .show-mobile { display:block; }
+  .icon {
+    background-image:url(img/sprite@2x.png);
+    background-size:240px 240px;
+    }
+  }
+

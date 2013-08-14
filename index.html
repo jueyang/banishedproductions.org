@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<ul class='main col8'>
+	<li class='col2 transition'><a>Tactile</a></li>
+	<li class='col2 transition'><a href='{{site.baseurl}}footsteps'>Footsteps</a></li>
+	<li class='col2 transition'><a>Machaniques</a></li>
+	<li class='col2 transition'><a>Wildcard</a></li>
+</ul>
+{% include featured.html %}
+<script>
+$('section ul.main li').on('mouseover mouseout',function(){
+	$(this).toggleClass('col2');
+	$(this).toggleClass('col3')
+})
+</script>

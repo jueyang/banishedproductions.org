@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<style>
+.cursive {
+	font-family: 'Dawning of a New Day', sans-serif;
+	font-size:22px;
+}
+.flickr {
+	height:200px;
+	padding:10px;
+	background:#f6f6f6;
+	margin-bottom:20px;
+}
+</style>
+<section class='col7'>
+	<h1>{{page.title}}</h1>
+	<p class='cursive'>{{page.description}}</p>
+	{% if page.flickr %}
+	<div class='flickr'>Flickr gallery</div>
+	{% endif %}
+	{{content}}
+</section>
+<section class='col3 margin1'>
+	{% if page.venue %}
+	{% include venue.html %}
+	{% endif %}
+</section>
