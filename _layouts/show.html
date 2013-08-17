@@ -1,28 +1,54 @@
 ---
 layout: default
 ---
+{% assign show = page.title | downcase %}
 <style>
-.cursive {
-	font-family: 'Dawning of a New Day', sans-serif;
-	font-size:22px;
+#flickr img {
+	padding: 0 20px 20px 0;
 }
-.flickr {
-	height:200px;
-	padding:10px;
-	background:#f6f6f6;
-	margin-bottom:20px;
+.subtitle {
+	padding-bottom:20px;
+}
+iframe.vimeo {
+	padding-right:20px;
+ 	width:100%!important;
+ 	height:240px;
 }
 </style>
-<section class='col7'>
+<section class='col12'>
 	<h1>{{page.title}}</h1>
-	<p class='cursive'>{{page.description}}</p>
+	<p class='subtitle'>{{page.subtitle}}</p>
+</section>
+<section class='col6'>
+	<!-- photos -->
 	{% if page.flickr %}
-	<div class='flickr'>Flickr gallery</div>
+	<div id='flickr'></div>
 	{% endif %}
-	{{content}}
-</section>
-<section class='col3 margin1'>
-	{% if page.venue %}
-	{% include venue.html %}
+	<!-- videos -->
+	{% if page.vimeo %}
+	<iframe class='vimeo' src="http://player.vimeo.com/video/{{page.vimeo}}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	{% endif %}
+	<p>{{content}}<p>
 </section>
+<section class='col5 margin0'>
+	{% if page.tags contains 'instruction' %}
+		{% for post in site.posts %}
+		{% if post.categories contains 'instruction' and post.categories contains show %}
+			{{post.content | markdownify}}
+		{% endif %}
+		{% endfor %}
+	{% endif %}
+	{% if page.tags contains 'venue' %}
+		{% for post in site.posts %}
+		{% if post.categories contains 'venue' and post.categories contains show %}
+			{{post.content | markdownify}}
+		{% endif %}
+		{% endfor %}
+	{% endif %}
+	{% include credentials.html %}
+</section>
+<script>
+{% if page.flickr %}
+	{% include js/photos.js %}
+{% endif %}
+</script>

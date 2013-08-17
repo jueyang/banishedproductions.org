@@ -1,14 +1,8 @@
 ---
-layout: show
-title: Walk with me
-description: "A brisk walk through Mount Pleasant/Columbia Heights"
-flickr: "http://www.flickr.com/photos/60776064@N02/sets/72157626302545444/"
-venue: example
+categories:
+- instruction
+- "walk with me"
 ---
-The first of the new [banished? footsteps]({{site.baseurl}}/footsteps) series, Walk With Me takes you on a brisk tour of the Columbia Heights and Mount Pleasant neighborhoods in Washington, DC. Immerse yourself in the three stories of people who call this neighborhood home and be woven into the fabric of a living urban art adventure.
-
-To launch this series, we organized a mass-walk of Walk With Me on Dec 12, 2010 at 12pm & 3pm. In partnership with the Mt. Pleasant Temporium (3068 Mt. Pleasant St NW), we also organized a mass-walk on Feb 27 & Mar 6, 2011 at 11am
-
 # Instructions
 
 ## Step 1: Download the package
@@ -37,23 +31,3 @@ TIP 2: Needless to say, pick a nice day. If walking with a friend, make sure you
 Share your experience by tweeting us before or after the walk, sending us pictures of you walking, or use the comment feature below. We’d love to hear back from you, and know what your walk was like.
 
 _A safety note from b?p! As always, please practice road safety, and cross streets carefully. Be sure to pause if you need, and be aware of your surroundings always. banished? productions cannot be held liable for any accidents that may happen to you on this walk._
-
-<!-- ## Voices by
-
-- Gerson A. Gomez
-- Molly Kelly
-- Sarah Mosbacher
-- Marisa Uchin
-- William M. Washington
-
-## Many thanks to
-
-- Ruth Gomez
-- Daniel Harris
-- Barrett Jones
-- Melissa Krodman
-- Joseph Price
-- Otis Ramzey-Zoe
-- Jessica Seo
-- Anna Smith
-- Sam Vick-McGill -->
