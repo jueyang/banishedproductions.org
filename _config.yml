@@ -4,5 +4,18 @@ exclude:
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
-permalink: /:title
+permalink: /:categories/:title
 baseurl: /
+
+#prose
+# Prose settings
+prose:
+  media: 'assets'
+  rooturl: "_posts"
+  metadata:
+    _posts/shows:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
