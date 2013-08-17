@@ -8,7 +8,6 @@ permalink: /:categories/:title
 baseurl: /
 
 #prose
-# Prose settings
 prose:
   media: 'assets'
   rooturl: "_posts"
@@ -19,3 +18,22 @@ prose:
           element: "text"
           label: "Title"
           value: ""
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+          value: ""
+      - name: "categories"
+        field:
+          element: "select"
+          label: "Select a series"
+          placeholder: "Default"
+          options:
+            - name: "footsteps"
+              value: "footsteps"
+            - name: "mechaniques"
+              value: "mechaniques"
+            - name: "tactile"
+              value: "tactile"
+            - name: "wildcard"
+              value: "wildcard"
