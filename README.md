@@ -1,6 +1,3 @@
-Banished Productions
+**This repo is no longer used/maintained.**
 
-- Twitter @banishedpdtns
-- Facebook https://www.facebook.com/banishedproductions
-- Flickr http://www.flickr.com/photos/60776064@N02/
-- Vimeo http://vimeo.com/user1744259
+For latest development, check out: https://github.com/banishedproductions/banishedproductions.github.io
